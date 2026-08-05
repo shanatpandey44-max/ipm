@@ -44,12 +44,8 @@ export function SiteHeader() {
 
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-white/95 shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
+            <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-black shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
               <img src="/logo.webp" alt="IPM logo" className="h-full w-full object-cover" />
-            </div>
-            <div className="hidden sm:block leading-tight">
-              <p className="text-sm font-bold text-brand-ink">Indore Property Management</p>
-              <p className="text-[10px] uppercase tracking-[0.18em] text-slate-500">Care Beyond Ownership</p>
             </div>
           </Link>
 
