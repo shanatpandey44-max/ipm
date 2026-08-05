@@ -8,6 +8,9 @@
     "dev": "nodemon index.js",
     "seed": "node utils/seed.js"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "author": "IPM Dev",
   "license": "ISC",
   "dependencies": {

@@ -2,11 +2,12 @@
   "name": "theipm",
   "private": true,
   "scripts": {
-    "postinstall": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install --include=dev && npm run build",
+    "build": "cd frontend && npm install --include=dev && npm run build",
     "start": "cd backend && npm start",
     "dev": "cd backend && npm run dev"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=20.19.0"
   }
 }
