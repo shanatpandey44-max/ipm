@@ -2,8 +2,8 @@
   "name": "theipm",
   "private": true,
   "scripts": {
-    "postinstall": "cd backend && npm install && cd ../frontend && npm install --include=dev && npm run build",
-    "build": "cd frontend && npm install --include=dev && npm run build",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install --include=dev --legacy-peer-deps && npm run build",
+    "build": "cd frontend && npm install --include=dev --legacy-peer-deps && npm run build",
     "start": "cd backend && npm start",
     "dev": "cd backend && npm run dev"
   },
