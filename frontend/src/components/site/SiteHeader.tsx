@@ -44,7 +44,7 @@ export function SiteHeader() {
 
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div className="relative h-14 w-20 rounded-2xl overflow-hidden bg-black shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
+            <div className="relative h-14 w-20 overflow-hidden bg-black shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
               <img src="/logo.webp" alt="IPM logo" className="h-full w-full object-cover" />
             </div>
           </Link>
