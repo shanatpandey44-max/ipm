@@ -112,7 +112,7 @@ export const cities = [
   {
     name: "Ujjain",
     count: 0,
-    image: "/ujjain.jpg",
+    image: "/ujjain.png",
     description: "Spiritual & Cultural City",
   },
   {

@@ -69,12 +69,28 @@ if (process.env.NODE_ENV === "development") {
 // Static files - serve uploaded images
 app.use("/uploads", express.static(path.join(__dirname, "../frontend/public/uploads")));
 
+// Static files - serve the built frontend app
+const frontendDistPath = path.join(__dirname, "../frontend/dist");
+app.use(express.static(frontendDistPath));
+
 // ── Routes ───────────────────────────────────────────────
 app.use("/api/auth", authRoutes);
 app.use("/api/properties", propertyRoutes);
 app.use("/api/inquiries", inquiryRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api", contentRoutes); // /api/cities, /api/testimonials
+
+// Serve frontend SPA for non-API routes
+app.get("/*", (req, res, next) => {
+  if (req.originalUrl.startsWith("/api")) {
+    return next();
+  }
+  res.sendFile(path.join(frontendDistPath, "index.html"), (err) => {
+    if (err) {
+      next(err);
+    }
+  });
+});
 
 // Health check
 app.get("/api/health", (req, res) => {

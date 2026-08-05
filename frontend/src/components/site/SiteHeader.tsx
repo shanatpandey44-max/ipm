@@ -30,16 +30,8 @@ export function SiteHeader() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "shadow-[0_2px_24px_rgba(11,37,69,0.10)]"
-            : ""
-        }`}
-        style={
-          scrolled
-            ? { background: "rgba(255,255,255,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }
-            : { background: "transparent" }
-        }
+        className="fixed inset-x-0 top-0 z-50 shadow-[0_2px_24px_rgba(11,37,69,0.10)]"
+      style={{ background: "rgba(255,255,255,0.95)", backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}
       >
         {/* Brand accent line — visible on scroll */}
         <div
@@ -52,23 +44,13 @@ export function SiteHeader() {
 
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div
-              className={`relative h-10 w-10 rounded-xl flex items-center justify-center font-display text-sm font-bold tracking-tight transition-all duration-300 overflow-hidden ${
-                scrolled
-                  ? "bg-gradient-to-br from-brand to-[#0077b6] text-white shadow-[0_4px_14px_rgba(0,163,224,0.35)]"
-                  : "bg-white/95 text-brand-ink shadow-[0_4px_14px_rgba(0,0,0,0.18)]"
-              }`}
-            >
+            <div className="relative h-10 w-10 rounded-xl flex items-center justify-center font-display text-sm font-bold tracking-tight transition-all duration-300 overflow-hidden bg-white/95 text-brand-ink shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
               <span className="relative z-10 select-none">iPM</span>
               <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
             </div>
             <div className="hidden sm:block leading-tight">
-              <p className={`text-sm font-bold transition-colors duration-300 ${scrolled ? "text-brand-ink" : "text-white"}`}>
-                Indore Property Management
-              </p>
-              <p className={`text-[10px] uppercase tracking-[0.18em] transition-colors duration-300 ${scrolled ? "text-brand/60" : "text-white/55"}`}>
-                Care Beyond Ownership
-              </p>
+              <p className="text-sm font-bold text-brand-ink">Indore Property Management</p>
+              <p className="text-[10px] uppercase tracking-[0.18em] text-slate-500">Care Beyond Ownership</p>
             </div>
           </Link>
 
@@ -78,11 +60,7 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
-                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
-                  scrolled
-                    ? "text-brand-ink/70 hover:text-brand-ink hover:bg-slate-100"
-                    : "text-white/75 hover:text-white hover:bg-white/10"
-                }`}
+                className="relative px-4 py-2 rounded-full text-sm font-medium text-brand-ink/80 hover:text-brand-ink hover:bg-slate-100 transition-all duration-200"
               >
                 {item.label}
               </a>
@@ -93,11 +71,7 @@ export function SiteHeader() {
           <div className="hidden lg:flex items-center gap-2 shrink-0">
             <a
               href="tel:+919009444491"
-              className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 ${
-                scrolled
-                  ? "text-brand-ink hover:bg-slate-100"
-                  : "text-white hover:bg-white/10"
-              }`}
+              className="flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-brand-ink transition-all duration-200 hover:bg-slate-100"
             >
               <span className={`grid h-7 w-7 place-items-center rounded-full transition-colors ${scrolled ? "bg-brand/10" : "bg-white/15"}`}>
                 <Phone className="h-3.5 w-3.5" />
@@ -118,18 +92,14 @@ export function SiteHeader() {
             <a
               href="tel:+919009444491"
               aria-label="Call us"
-              className={`grid h-10 w-10 place-items-center rounded-full transition-colors ${
-                scrolled ? "text-brand-ink hover:bg-slate-100" : "text-white hover:bg-white/10"
-              }`}
+              className="grid h-10 w-10 place-items-center rounded-full text-brand-ink transition-colors hover:bg-slate-100"
             >
               <Phone className="h-4 w-4" />
             </a>
             <button
               aria-label="Open menu"
               onClick={() => setOpen(true)}
-              className={`grid h-10 w-10 place-items-center rounded-full transition-colors ${
-                scrolled ? "text-brand-ink hover:bg-slate-100" : "text-white hover:bg-white/10"
-              }`}
+              className="grid h-10 w-10 place-items-center rounded-full text-brand-ink transition-colors hover:bg-slate-100"
             >
               <Menu className="h-5 w-5" />
             </button>

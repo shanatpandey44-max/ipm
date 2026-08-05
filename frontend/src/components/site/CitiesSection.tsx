@@ -7,16 +7,32 @@ export function CitiesSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const { data: apiCities, isLoading } = useCities();
 
-  const cities = apiCities?.length
-    ? apiCities
-    : staticCities.map((c, i) => ({
-        _id: String(i),
-        name: c.name,
-        slug: c.name.toLowerCase(),
-        image: { url: c.image },
-        propertyCount: c.count,
-        shortDescription: c.description,
-      }));
+  const cityImages: Record<string, string> = {
+    indore: "/Indore.jpg",
+    ujjain: "/ujjain.png",
+    dewas: "/Dewas.png",
+    bhopal: "/Bhopal.png",
+  };
+
+  const cities = (apiCities?.length ? apiCities : staticCities).map((c, i) => {
+    const name = (c as any)?.name || `City ${i + 1}`;
+    const slug = (c as any)?.slug || String(name).toLowerCase();
+    const normalized = String(name).toLowerCase();
+    const imageSrc =
+      cityImages[normalized] || cityImages[slug] ||
+      (c as any)?.image?.url ||
+      (typeof (c as any)?.image === "string" ? (c as any).image : undefined) ||
+      "";
+
+    return {
+      _id: (c as any)?._id || String(i),
+      name,
+      slug,
+      image: { url: imageSrc },
+      propertyCount: (c as any)?.propertyCount ?? (c as any)?.count ?? 0,
+      shortDescription: (c as any)?.shortDescription || (c as any)?.description || "",
+    };
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
