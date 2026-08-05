@@ -1,4 +1,34 @@
-
+unpacking archive
+14.1 MB
+86ms
+using build driver railpack-v0.35.0
+uploading snapshot
+12.8 MB
+295ms
+                   
+╭─────────────────╮
+│ Railpack 0.35.0 │
+╰─────────────────╯
+ 
+  ⚠ No node package manager detected, using npm
+  ↳ Detected Node
+  ↳ Using npm package manager
+  ↳ Custom start command detected, skipping Caddy start
+  → Add a `package-lock.json` for more deterministic installs https://railpack.com/architecture/recommendations
+  ↳ Found web command in Procfile
+            
+  Packages  
+  ──────────
+  node  │  20.19.0  │  idiomatic-version-file (20.19.0)
+            
+  Steps     
+  ──────────
+  ▸ install
+    $ npm install
+         
+  ▸ build
+    $ npm run build
+            
   Deploy    
   ──────────
     $ cd backend && npm start
