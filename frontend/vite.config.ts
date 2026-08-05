@@ -23,19 +23,31 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
-        manualChunks: {
-          "react-vendor": ["react", "react-dom"],
-          "router": ["@tanstack/react-router", "@tanstack/react-query"],
-          "ui-radix": [
-            "@radix-ui/react-dialog",
-            "@radix-ui/react-select",
-            "@radix-ui/react-dropdown-menu",
-            "@radix-ui/react-tooltip",
-            "@radix-ui/react-accordion",
-          ],
-          "forms": ["react-hook-form", "@hookform/resolvers", "zod"],
-          "charts": ["recharts"],
-          "utils": ["axios", "clsx", "tailwind-merge", "date-fns"],
+        manualChunks(id) {
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'react-vendor';
+          }
+          if (id.includes('@tanstack/react-router') || id.includes('@tanstack/react-query')) {
+            return 'router';
+          }
+          if (
+            id.includes('@radix-ui/react-dialog') ||
+            id.includes('@radix-ui/react-select') ||
+            id.includes('@radix-ui/react-dropdown-menu') ||
+            id.includes('@radix-ui/react-tooltip') ||
+            id.includes('@radix-ui/react-accordion')
+          ) {
+            return 'ui-radix';
+          }
+          if (id.includes('react-hook-form') || id.includes('@hookform/resolvers') || id.includes('zod')) {
+            return 'forms';
+          }
+          if (id.includes('recharts')) {
+            return 'charts';
+          }
+          if (id.includes('axios') || id.includes('clsx') || id.includes('tailwind-merge') || id.includes('date-fns')) {
+            return 'utils';
+          }
         },
       },
     },
