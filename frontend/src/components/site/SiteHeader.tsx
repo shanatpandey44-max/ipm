@@ -44,9 +44,8 @@ export function SiteHeader() {
 
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div className="relative h-10 w-10 rounded-xl flex items-center justify-center font-display text-sm font-bold tracking-tight transition-all duration-300 overflow-hidden bg-white/95 text-brand-ink shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
-              <span className="relative z-10 select-none">iPM</span>
-              <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+            <div className="relative h-10 w-10 rounded-xl overflow-hidden bg-white/95 shadow-[0_4px_14px_rgba(0,0,0,0.18)]">
+              <img src="/logo.webp" alt="IPM logo" className="h-full w-full object-cover" />
             </div>
             <div className="hidden sm:block leading-tight">
               <p className="text-sm font-bold text-brand-ink">Indore Property Management</p>
@@ -125,8 +124,8 @@ export function SiteHeader() {
         {/* Drawer header */}
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
           <div className="flex items-center gap-2.5">
-            <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand to-[#0077b6] font-display text-sm font-bold text-white shadow-[0_4px_12px_rgba(0,163,224,0.3)]">
-              iPM
+            <div className="relative h-9 w-9 overflow-hidden rounded-xl bg-white shadow-[0_4px_12px_rgba(0,163,224,0.3)]">
+              <img src="/logo.webp" alt="IPM logo" className="h-full w-full object-cover" />
             </div>
             <div>
               <p className="text-sm font-bold text-brand-ink leading-tight">IPM</p>
