@@ -73,6 +73,9 @@ app.use("/uploads", express.static(path.join(__dirname, "../frontend/public/uplo
 const frontendDistPath = path.join(__dirname, "../frontend/dist");
 app.use(express.static(frontendDistPath));
 
+// Static files fallback for public assets if they are not copied into dist
+app.use(express.static(path.join(__dirname, "../frontend/public")));
+
 // ── Routes ───────────────────────────────────────────────
 app.use("/api/auth", authRoutes);
 app.use("/api/properties", propertyRoutes);
