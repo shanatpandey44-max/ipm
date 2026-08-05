@@ -1,10 +1,9 @@
-unpacking archive
-14.1 MB
-86ms
+
+101ms
 using build driver railpack-v0.35.0
 uploading snapshot
 12.8 MB
-295ms
+433ms
                    
 ╭─────────────────╮
 │ Railpack 0.35.0 │
@@ -37,27 +36,32 @@ uploading snapshot
 load build definition from ./railpack-plan.json
 0ms
 
-copy .nvmrc
-91ms
+install mise packages: node cached
+0ms
 
-install mise packages: node
-1s
-mise node@20.19.0 ✓ installed
+copy .nvmrc cached
+0ms
 
 copy / /app
-187ms
+169ms
+
+copy /mise/installs, /mise/shims, /root/.local/state/mise, /etc/mise/config.toml, /usr/local/bin/mise cached
+0ms
+
+install apt packages: libatomic1 cached
+0ms
 
 mkdir -p /app/node_modules/.cache
-208ms
+209ms
 
 npm install
-7s
+8s
 npm warn config production Use `--omit=dev` instead.
 > postinstall
 > cd backend && npm install && cd ../frontend && npm install --include=dev && npm run build
 npm warn config production Use `--omit=dev` instead.
 npm warn deprecated multer@1.4.5-lts.2: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
-added 168 packages, and audited 169 packages in 957ms
+added 168 packages, and audited 169 packages in 1s
 2 high severity vulnerabilities
 To address issues that do not require attention, run:
   npm audit fix
@@ -75,18 +79,33 @@ npm warn config production Use `--omit=dev` instead.
 > build
 > vite build
 vite v8.1.4 building client environment for production...
-Warning: Invalid output options (1 issue found)
-- For the "manualChunks". Invalid type: Expected Function but received Object. 
 
 transforming...
 ✓ 2021 modules transformed.
-✗ Build failed in 585ms
+✗ Build failed in 830ms
 error during build:
 [31mBuild failed with 1 error:
 
-TypeError: manualChunks is not a function
-    at name (file:///app/frontend/node_modules/rolldown/dist/shared/rolldown-build-CtPvmZgJ.mjs:3059:10)
-    at name (file:///app/frontend/node_modules/rolldown/dist/shared/rolldown-build-CtPvmZgJ.mjs:3074:54)
+[plugin vite:esbuild-transpile]
+Error: Failed to load `transformWithEsbuild`. It is deprecated and it now requires esbuild to be installed separately. If you are a package author, please migrate to `transformWithOxc` instead.
+
+    at transformWithEsbuild (file:///app/frontend/node_modules/vite/dist/node/chunks/node.js:3332:9)
+    at async PluginContextImpl.renderChunk (file:///app/frontend/node_modules/vite/dist/node/chunks/node.js:3384:16)
+    at async plugin (file:///app/frontend/node_modules/rolldown/dist/shared/bindingify-input-options-XPJLJOD0.mjs:1618:16)
+    at async plugin.<computed> (file:///app/frontend/node_modules/rolldown/dist/shared/bindingify-input-options-XPJLJOD0.mjs:1959:12)
+Caused by:
+  Error: Cannot find package 'esbuild' imported from /app/frontend/node_modules/vite/dist/node/chunks/node.js
+  Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'esbuild' imported from /app/frontend/node_modules/vite/dist/node/chunks/node.js
+      at packageResolve (node:internal/modules/esm/resolve:873:9)
+      at moduleResolve (node:internal/modules/esm/resolve:946:18)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at u (file:///app/frontend/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
     at aggregateBindingErrorsIntoJsError (file:///app/frontend/node_modules/rolldown/dist/shared/error-BHRSI0R7.mjs:48:18)
     at unwrapBindingResult (file:///app/frontend/node_modules/rolldown/dist/shared/error-BHRSI0R7.mjs:18:128)
     at #build (file:///app/frontend/node_modules/rolldown/dist/shared/rolldown-build-CtPvmZgJ.mjs:3276:34)
@@ -100,15 +119,6 @@ npm error code 1
 npm error path /app
 npm error command failed
 npm error command sh -c cd backend && npm install && cd ../frontend && npm install --include=dev && npm run build
-npm error A complete log of this run can be found in: /root/.npm/_logs/2026-08-05T18_44_09_026Z-debug-0.log
-
-copy /mise/installs, /usr/local/bin/mise, /etc/mise/config.toml, /mise/shims cached
-0ms
-
-install apt packages: libatomic1 cached
-0ms
-
-copy /root/.local/state/mise
-66ms
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-08-05T18_52_42_295Z-debug-0.log
 scheduling build on Metal builder "builder-ngynwc"
 Build Failed: build daemon returned an error < failed to solve: process "npm install" did not complete successfully: exit code: 1 >
