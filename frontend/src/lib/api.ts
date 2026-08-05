@@ -1,8 +1,11 @@
 import axios from "axios";
 
-const defaultBaseURL = import.meta.env.DEV ? "http://localhost:5000/api" : "/api";
+const localFallback = "http://localhost:5000/api";
+const envApiURL = import.meta.env.VITE_API_URL;
+const productionBaseURL = envApiURL && !envApiURL.includes("localhost") ? envApiURL : "/api";
+const defaultBaseURL = import.meta.env.DEV ? envApiURL || localFallback : productionBaseURL;
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || defaultBaseURL,
+  baseURL: defaultBaseURL,
   withCredentials: true,
   headers: { "Content-Type": "application/json" },
   timeout: 15000,
