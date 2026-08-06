@@ -120,7 +120,7 @@ export function SiteHeader() {
         {/* Drawer header */}
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
           <div className="flex items-center gap-2.5">
-            <div className="relative h-9 w-9 overflow-hidden rounded-xl bg-white shadow-[0_4px_12px_rgba(0,163,224,0.3)]">
+            <div className="relative h-11 w-11 overflow-hidden rounded-xl bg-black shadow-[0_4px_12px_rgba(0,0,0,0.22)]">
               <img src="/logo.webp" alt="IPM logo" className="h-full w-full object-cover" />
             </div>
             <div>

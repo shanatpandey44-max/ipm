@@ -12,7 +12,6 @@ const InquiryForm = lazy(() => import("@/components/site/InquiryForm").then(m =>
 const CitiesSection = lazy(() => import("@/components/site/CitiesSection").then(m => ({ default: m.CitiesSection })));
 const Testimonials = lazy(() => import("@/components/site/Testimonials").then(m => ({ default: m.Testimonials })));
 const SiteFooter = lazy(() => import("@/components/site/SiteFooter").then(m => ({ default: m.SiteFooter })));
-const WhatsAppButton = lazy(() => import("@/components/site/WhatsAppButton").then(m => ({ default: m.WhatsAppButton })));
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -55,10 +54,6 @@ function Index() {
         <SiteFooter />
       </Suspense>
       <Toaster richColors position="top-center" />
-
-      <Suspense fallback={null}>
-        <WhatsAppButton />
-      </Suspense>
 
       {/* Back to top */}
       <button
