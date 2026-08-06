@@ -89,10 +89,6 @@ export function InquiryForm() {
         <div className="grid gap-14 lg:grid-cols-2 lg:gap-20">
           {/* Left info */}
           <div>
-            <div className="section-reveal inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-brand">
-              <Sparkles className="h-3 w-3" />
-              Get in Touch
-            </div>
             <h2 className="section-reveal stagger-1 mt-5 font-display text-[clamp(1.75rem,4vw,3rem)] font-medium leading-tight text-white">
               Real Estate{" "}
               <span className="text-gradient-gold">Inquiry</span>

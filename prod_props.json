@@ -1,0 +1,497 @@
+﻿{
+    "success":  true,
+    "total":  9,
+    "page":  1,
+    "pages":  1,
+    "count":  9,
+    "properties":  [
+                       {
+                           "price":  {
+                                         "amount":  3200000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹32L - ₹85L",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "state":  "Madhya Pradesh",
+                                            "address":  "AB Road Highway Touch, Rau",
+                                            "locality":  "Rau",
+                                            "city":  "Indore"
+                                        },
+                           "size":  {
+                                        "area":  400,
+                                        "areaUnit":  "sq ft",
+                                        "displaySize":  "400–1095 sq. ft."
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb02e",
+                           "title":  "Coral Reefsty",
+                           "slug":  "coral-reefs",
+                           "type":  "Residential",
+                           "subType":  "2 BHK",
+                           "status":  "For Sale",
+                           "label":  "",
+                           "bedrooms":  2,
+                           "bathrooms":  2,
+                           "amenities":  [
+                                             "Garden",
+                                             "CCTV",
+                                             "Rainwater Harvesting",
+                                             "Power Backup"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb02f"
+                                          },
+                                          {
+                                              "public_id":  "1785945687048-2pncfuzfvih.jpg",
+                                              "url":  "/uploads/properties/1785945687048-2pncfuzfvih.jpg",
+                                              "caption":  "",
+                                              "isPrimary":  false,
+                                              "_id":  "6a735e577d1dadfe3075903b"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  28,
+                           "isFeatured":  false,
+                           "createdAt":  "2026-07-13T08:43:06.986Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  3000000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹30L - ₹35L",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Indore–Ujjain Highway",
+                                            "locality":  "Ujjain Highway",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  1000,
+                                        "displaySize":  "1000–1100 sq. ft. (20×55)",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb034",
+                           "title":  "Treasure Park",
+                           "slug":  "treasure-park",
+                           "type":  "Plot",
+                           "subType":  "Residential Plot",
+                           "status":  "For Sale",
+                           "label":  "",
+                           "bedrooms":  0,
+                           "bathrooms":  0,
+                           "amenities":  [
+                                             "Bank Loan Available",
+                                             "Water Supply",
+                                             "Electricity"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb035"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  false,
+                           "createdAt":  "2026-07-13T08:43:06.986Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  5500000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹55L - ₹1.8Cr",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Near Vijay Nagar",
+                                            "locality":  "Vijay Nagar",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  1453,
+                                        "displaySize":  "1453–4519 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb032",
+                           "title":  "Shree Ram Enclave 2",
+                           "slug":  "shree-ram-enclave-2",
+                           "type":  "Plot",
+                           "subType":  "Residential Plot",
+                           "status":  "For Sale",
+                           "label":  "",
+                           "bedrooms":  0,
+                           "bathrooms":  0,
+                           "amenities":  [
+                                             "Gated Community",
+                                             "Water Supply",
+                                             "Electricity",
+                                             "Bank Loan Available"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb033"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  false,
+                           "createdAt":  "2026-07-13T08:43:06.986Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  9000000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹90L - ₹1.3Cr",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Near MR 10, Vijay Nagar",
+                                            "locality":  "Vijay Nagar",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  1279,
+                                        "displaySize":  "1279–1865 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb030",
+                           "title":  "Tattvam Heights",
+                           "slug":  "tattvam-heights",
+                           "type":  "Residential",
+                           "subType":  "3 BHK",
+                           "status":  "For Sale",
+                           "label":  "Featured",
+                           "bedrooms":  3,
+                           "bathrooms":  3,
+                           "amenities":  [
+                                             "Swimming Pool",
+                                             "Gym",
+                                             "Club House",
+                                             "Jogging Track",
+                                             "Children Play Area",
+                                             "24/7 Security"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb031"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  5,
+                           "isFeatured":  true,
+                           "createdAt":  "2026-07-13T08:43:06.986Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  3500000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹35L - ₹75L",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Vijay Nagar",
+                                            "locality":  "Vijay Nagar",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  478,
+                                        "displaySize":  "478–1232 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb028",
+                           "title":  "Adarsh Residency",
+                           "slug":  "adarsh-residency",
+                           "type":  "Residential",
+                           "subType":  "2 BHK",
+                           "status":  "For Sale",
+                           "label":  "",
+                           "bedrooms":  2,
+                           "bathrooms":  2,
+                           "amenities":  [
+                                             "Parking",
+                                             "Lift",
+                                             "Power Backup",
+                                             "Garden",
+                                             "Vaastu Compliant"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb029"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  false,
+                           "createdAt":  "2026-07-13T08:43:06.985Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  2800000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹28L - ₹50L",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Near Dewas Naka",
+                                            "locality":  "Dewas Naka",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  650,
+                                        "displaySize":  "650–1155 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb02c",
+                           "title":  "Shiv Dham",
+                           "slug":  "shiv-dham",
+                           "type":  "Residential",
+                           "subType":  "2 BHK",
+                           "status":  "For Sale",
+                           "label":  "",
+                           "bedrooms":  2,
+                           "bathrooms":  1,
+                           "amenities":  [
+                                             "Vaastu Compliant",
+                                             "Near Market",
+                                             "Near School",
+                                             "Parking"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb02d"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  false,
+                           "createdAt":  "2026-07-13T08:43:06.985Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  4000000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹40L - ₹2.2Cr",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Ujjain–Indore Highway",
+                                            "locality":  "Ujjain Highway",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  1130,
+                                        "displaySize":  "1130–6450 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb02a",
+                           "title":  "MGR Princess HillTop",
+                           "slug":  "mgr-princess-hilltop",
+                           "type":  "Plot",
+                           "subType":  "Residential Plot",
+                           "status":  "For Sale",
+                           "label":  "Hot Deal",
+                           "bedrooms":  0,
+                           "bathrooms":  0,
+                           "amenities":  [
+                                             "Gated Community",
+                                             "Bank Loan Available",
+                                             "Water Supply",
+                                             "Electricity"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb02b"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  true,
+                           "createdAt":  "2026-07-13T08:43:06.985Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  8500000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹85L - ₹1.2Cr",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Near MR 5 Square, Super Corridor",
+                                            "locality":  "Super Corridor",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  1279,
+                                        "displaySize":  "1279–1865 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb024",
+                           "title":  "The Sky Empire",
+                           "slug":  "the-sky-empire",
+                           "type":  "Residential",
+                           "subType":  "3 BHK",
+                           "status":  "For Sale",
+                           "label":  "New Launch",
+                           "bedrooms":  3,
+                           "bathrooms":  2,
+                           "amenities":  [
+                                             "Swimming Pool",
+                                             "Gym",
+                                             "Club House",
+                                             "24/7 Security",
+                                             "Power Backup",
+                                             "Lift"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb025"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  true,
+                           "createdAt":  "2026-07-13T08:43:06.985Z"
+                       },
+                       {
+                           "price":  {
+                                         "amount":  2500000,
+                                         "unit":  "total",
+                                         "displayPrice":  "₹25L - ₹60L",
+                                         "negotiable":  false
+                                     },
+                           "location":  {
+                                            "address":  "Near Ujjain Highway",
+                                            "locality":  "Ujjain Highway",
+                                            "city":  "Indore",
+                                            "state":  "Madhya Pradesh"
+                                        },
+                           "size":  {
+                                        "area":  600,
+                                        "displaySize":  "600–1500 sq. ft.",
+                                        "areaUnit":  "sq ft"
+                                    },
+                           "_id":  "6a54a51a88d6941e5e1cb026",
+                           "title":  "Laabham Kunj Vihar",
+                           "slug":  "laabham-kunj-vihar",
+                           "type":  "Plot",
+                           "subType":  "Residential Plot",
+                           "status":  "For Sale",
+                           "label":  "Featured",
+                           "bedrooms":  0,
+                           "bathrooms":  0,
+                           "amenities":  [
+                                             "Gated Community",
+                                             "Water Supply",
+                                             "Electricity",
+                                             "Bank Loan Available"
+                                         ],
+                           "images":  [
+                                          {
+                                              "url":  "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format\u0026fit=crop\u0026w=1200\u0026q=80",
+                                              "caption":  "",
+                                              "isPrimary":  true,
+                                              "_id":  "6a54a51a88d6941e5e1cb027"
+                                          }
+                                      ],
+                           "agent":  {
+                                         "avatar":  {
+                                                        "url":  ""
+                                                    },
+                                         "_id":  "6a54a51a88d6941e5e1cb019",
+                                         "name":  "Santosh Prasad Pal",
+                                         "phone":  "9667600611"
+                                     },
+                           "views":  0,
+                           "isFeatured":  true,
+                           "createdAt":  "2026-07-13T08:43:06.985Z"
+                       }
+                   ]
+}

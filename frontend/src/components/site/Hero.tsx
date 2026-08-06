@@ -5,7 +5,7 @@ import { useFeaturedProperties } from "@/hooks/useApi";
 
 const STATS = [
   { value: "500+", label: "Happy Clients", sub: "Since 2018" },
-  { value: "₹200Cr+", label: "Properties Sold", sub: "Trusted & secured" },
+  { value: "₹90Cr+", label: "Properties Sold", sub: "Trusted & secured" },
   { value: "100%", label: "Legally Verified", sub: "RERA compliant" },
 ];
 
