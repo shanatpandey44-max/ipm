@@ -155,8 +155,16 @@ exports.updateProperty = async (req, res, next) => {
         }))
       );
       const newImages = await Promise.all(uploadPromises);
-      req.body.images = [...(property.images || []), ...newImages];
+      // Merge existing images sent from frontend + newly uploaded
+      const existing = req.body.existingImages
+        ? (Array.isArray(req.body.existingImages) ? req.body.existingImages : [req.body.existingImages]).map(s => JSON.parse(s))
+        : property.images;
+      req.body.images = [...existing, ...newImages];
+    } else if (req.body.existingImages) {
+      // No new uploads but existing images list was sent (some may have been removed)
+      req.body.images = (Array.isArray(req.body.existingImages) ? req.body.existingImages : [req.body.existingImages]).map(s => JSON.parse(s));
     }
+    delete req.body.existingImages;
 
     property = await Property.findByIdAndUpdate(req.params.id, req.body, {
       new: true,

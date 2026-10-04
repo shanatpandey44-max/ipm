@@ -10,8 +10,8 @@ export const Route = createFileRoute("/login")({
 function LoginPage() {
   const navigate = useNavigate();
   const { login, isLoading } = useAuthStore();
-  const [email, setEmail] = useState("admin@theipm.in");
-  const [password, setPassword] = useState("Admin@IPM2024");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPass, setShowPass] = useState(false);
   const [error, setError] = useState("");
 
@@ -30,16 +30,6 @@ function LoginPage() {
       await redirectAfterLogin();
     } catch (err: any) {
       setError(err.message || "Invalid credentials");
-    }
-  };
-
-  const handleQuickSignIn = async () => {
-    setError("");
-    try {
-      await login("admin@theipm.in", "Admin@IPM2024");
-      await redirectAfterLogin();
-    } catch (err: any) {
-      setError(err.message || "Unable to sign in");
     }
   };
 
@@ -112,15 +102,6 @@ function LoginPage() {
               {isLoading ? "Signing in..." : "Sign In"}
             </button>
           </form>
-
-          <button
-            type="button"
-            onClick={handleQuickSignIn}
-            disabled={isLoading}
-            className="w-full h-11 rounded-xl border border-slate-200 bg-slate-100 text-slate-900 font-semibold text-sm hover:bg-slate-200 transition-all disabled:opacity-60 disabled:cursor-not-allowed mt-3"
-          >
-            Quick Admin Sign In
-          </button>
 
           <p className="text-center text-xs text-slate-400 mt-6">
             <a href="/" className="hover:text-brand transition-colors">← Back to website</a>

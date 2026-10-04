@@ -1,10 +1,22 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { useAuthStore } from "@/stores/authStore";
 import { DashboardLayout } from "@/components/dashboard/DashboardLayout";
 import { Upload, X, ArrowLeft, Trash2 } from "lucide-react";
 import api from "@/lib/api";
 import { toast } from "sonner";
+
+const inputCls = "h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-800 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20 transition-all";
+const selectCls = inputCls + " cursor-pointer";
+
+const Field = memo(({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) => (
+  <div>
+    <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+      {label}{required && <span className="text-red-400 ml-0.5">*</span>}
+    </label>
+    {children}
+  </div>
+));
 
 const MAX_SIZE = 500 * 1024;
 async function compressImage(file: File): Promise<File> {
@@ -189,6 +201,10 @@ function EditProperty() {
       if (form.possessionStatus) fd.append("possessionStatus", form.possessionStatus);
       if (form.reraNumber) fd.append("reraNumber", form.reraNumber);
       selectedAmenities.forEach(a => fd.append("amenities[]", a));
+      // Send existing images so backend doesn't lose them
+      existingImages.forEach(img => {
+        fd.append("existingImages[]", JSON.stringify(img));
+      });
       newImages.forEach(img => fd.append("images", img));
 
       await api.put(`/properties/${propertyId}`, fd, { headers: { "Content-Type": "multipart/form-data" } });
@@ -201,17 +217,6 @@ function EditProperty() {
     }
   };
 
-  const Field = ({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) => (
-    <div>
-      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
-        {label}{required && <span className="text-red-400 ml-0.5">*</span>}
-      </label>
-      {children}
-    </div>
-  );
-
-  const inputCls = "h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-800 focus:border-brand focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand/20 transition-all";
-  const selectCls = inputCls + " cursor-pointer";
   const backTo = user?.role === "admin" ? "/admin/properties" : "/agent/properties";
 
   if (fetching) {
